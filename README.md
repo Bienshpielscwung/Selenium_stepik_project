@@ -1,2 +1,2 @@
-# Selenium Final project from stepik
-Stepik project
+# Selenium. Final project from stepik
+Create for work with selenium project testing web
