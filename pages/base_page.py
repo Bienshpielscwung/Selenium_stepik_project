@@ -4,7 +4,7 @@ import math
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from selenium.common.exceptions import TimeoutException
-from .locators import BasePageLocators
+from .locators import BasePageLocators, BasketPageLocators
 
 
 class BasePage():
@@ -36,7 +36,11 @@ class BasePage():
         return False
 
     def go_to_login_page(self):
-        link = self.browser.find_element(*BasePageLocators.LOGIN_LINK_INVALID)
+        link = self.browser.find_element(*BasePageLocators.LOGIN_LINK)
+        link.click()
+
+    def go_to_basket_header_page(self):
+        link = self.browser.find_element(*BasketPageLocators.BUTTON_BASKET_FROM_HEADER_PAGE)
         link.click()
 
     def open(self):

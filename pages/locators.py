@@ -22,3 +22,8 @@ class ProductPageLocators():
     NAME_PRODUCT_BASKET = (By.CSS_SELECTOR, "#messages div.alert:nth-child(1) div.alertinner strong")
     PRICE_PRODUCT_BASKET = (By.CSS_SELECTOR, "div.alertinner p strong")
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, "div.alertinner")
+
+
+class BasketPageLocators():
+    BUTTON_BASKET_FROM_HEADER_PAGE = (By.CSS_SELECTOR, "span.btn-group a.btn")
+    MESSAGE_OF_EMPTY_BASKET = (By.CSS_SELECTOR, "#content_inner > p")
